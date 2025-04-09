@@ -1,0 +1,102 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+table th,
+table td {
+    padding: 0.75rem;
+    border: 1px solid #b2ebf2;
+    text-align: left;
+}
+
+table th {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+table tr:nth-child(even) {
+    background-color: #f1f1f1;
+}
+
+table td:nth-child(3),
+table th:nth-child(3) {
+    min-width: 200px; 
+}
+
+@media (max-width: 1050px) {
+    table {
+        border: 0;
+        display: block;
+        overflow-x: auto; }
+
+    table th,
+    table td {
+        padding: 0.8rem;
+        text-align: center;
+        word-wrap: break-word; 
+    }
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.card {
+    background-color: #e0f7fa;
+    border: 1px solid #b2ebf2;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 2px 6px rgba(0, 166, 166, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px rgba(0, 166, 166, 0.15);
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.card p {
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+}
+
+.card .meta {
+    font-size: 0.85rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+}
+
+.card .card-actions {
+    margin-top: auto;
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+}
+
+.card .card-actions .btn {
+    background-color: var(--accent);
+    color: var(--white);
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.card .card-actions .btn:hover {
+    background-color: #0097a7;
+}

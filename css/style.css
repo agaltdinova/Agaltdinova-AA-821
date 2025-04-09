@@ -1,1 +1,122 @@
+:root {   
+    --primary: #00a6a6;       
+    --secondary: #ffd54f;     
+    --accent: #00bcd4;       
+    --danger: #ef5350;        
+    --white: #ffffff;
+    --black: #2b2b2b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--white);
+    color: var(--black);
+    line-height: 1.6;
+    padding: 1rem;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+h1, h2, h3 {
+    color: var(--primary);
+    margin-top: 1rem;
+}
+
+header {
+    background-color: var(--primary);
+    padding: 1rem 0;
+}
+
+header .logo h1 {
+    color: var(--white);
+    font-size: 1.5rem;
+}
+
+header .container {
+    display: flex;
+    gap: 10px; 
+    justify-content: space-between;
+}
+
+header .header-buttons .btn,
+header .btn-logout {
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+header .header-buttons .btn {
+    background-color: var(--accent); 
+    color: white;
+}
+
+header .header-buttons .btn:hover {
+    background-color: #0097a7; 
+}
+
+button, .btn {
+    background-color: var(--secondary);
+    color: var(--black);
+    border: none;
+    padding: 0.5rem 1rem;
+    margin: 4px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+button:hover, .btn:hover {
+    background-color: #ffc107;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%; 
+    max-width: 600px; 
+}
+
+form {
+    background-color: #e0f7fa;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    width: 100%; 
+    box-sizing: border-box;
+}
+
+form label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--primary);
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%; 
+    padding: 0.6rem;
+    margin-bottom: 1rem;
+    border: 1px solid #b2ebf2;
+    border-radius: 6px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
 
